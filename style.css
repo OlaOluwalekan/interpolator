@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Header Syles */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: greenyellow;
+  padding: 5px 10px;
+}
+
+.save {
+  font-size: 30px;
+  color: red;
+}
+
+/* End of header styles */
+
+/* Main body styles */
+.main {
+  padding: 50px 5px;
+  position: absolute;
+  width: 90vw;
+  /* height: 70vh; */
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 20%;
+}
+
+.t-boxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+}
+
+.t-boxes section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.text {
+  width: 100%;
+  position: relative;
+}
+
+.text input {
+  font-size: 13px;
+  padding: 5px 5px 5px 20px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+}
+
+.info {
+  position: absolute;
+  color: grey;
+  top: 25%;
+  left: 3px;
+  font-size: 12px;
+}
+
+.arrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  /* background-color: green; */
+  padding: 0;
+  margin: 0;
+}
+
+.line {
+  width: 60%;
+  height: 3px;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow-head {
+  /* background-color: yellow; */
+  margin-left: -5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main button {
+  width: 90%;
+  padding: 5px 0;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  background: green;
+  color: white;
+  font-weight: 900;
+}
+/* End of Main body styles */
+
+/* Tablet Screen */
+@media screen and (min-width: 600px) {
+  .main {
+    width: 70vw;
+    /* left: 30%; */
+  }
+}
+/* End of Tablet Screen */
+
+/* Desktop Screen */
+@media screen and (min-width: 900px) {
+  .main {
+    width: 50vw;
+  }
+}
+/* End of Desktop Screen */
