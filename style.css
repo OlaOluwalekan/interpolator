@@ -39,6 +39,33 @@ header {
   top: 20%;
 }
 
+.info-msg {
+  position: absolute;
+  top: 3%;
+  left: -5%;
+  background-color: white;
+  width: 30%;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 12px;
+  box-shadow: 1px 1px 3px black;
+  display: none;
+  z-index: 10;
+  opacity: 1;
+}
+
+.info-msg::after {
+  content: "";
+  background-color: white;
+  position: absolute;
+  bottom: -5px;
+  left: 45%;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  /* box-shadow: 1px 1px 3px black; */
+}
+
 .t-boxes {
   display: flex;
   flex-direction: column;
@@ -65,6 +92,11 @@ header {
   border-radius: 5px;
   border: none;
   width: 100%;
+}
+
+#cAns {
+  background-color: white;
+  border: solid 2px blue;
 }
 
 .info {

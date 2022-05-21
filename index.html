@@ -24,10 +24,13 @@
     </header>
 
     <div class="main">
+      <div class="info-msg">
+        <p>Input the first standard value that the defines the conversion</p>
+      </div>
       <div class="t-boxes">
         <section class="row1">
           <div class="text">
-            <input type="number" name="sfrom" id="sFrom" placeholder="Input a value">
+            <input type="number" name="sfrom" id="sFrom1" placeholder="Input a value">
             <div class="info" id="info1">
               <i class="fas fa-info-circle"></i>
             </div>
@@ -39,8 +42,8 @@
             </div>
           </div>
           <div class="text">
-            <input type="number" name="sfrom" id="sFrom" placeholder="Input a value">
-            <div class="info" id="info1">
+            <input type="number" name="sfrom" id="sFrom2" placeholder="Input a value">
+            <div class="info" id="info2">
               <i class="fas fa-info-circle"></i>
             </div>
           </div>
@@ -48,8 +51,8 @@
 
         <section class="row2">
           <div class="text">
-            <input type="number" name="sfrom" id="sFrom" placeholder="Input a value">
-            <div class="info" id="info1">
+            <input type="number" name="sfrom" id="cTo" placeholder="Input a value">
+            <div class="info" id="info3">
               <i class="fas fa-info-circle"></i>
             </div>
           </div>
@@ -60,16 +63,18 @@
             </div>
           </div>
           <div class="text">
-            <input type="number" name="sfrom" id="sFrom" placeholder="Input a value">
-            <div class="info" id="info1">
+            <input type="number" name="sfrom" id="cAns" placeholder="Input a value" disabled>
+            <div class="info" id="info4">
               <i class="fas fa-info-circle"></i>
             </div>
           </div>
         </section>
           
       </div>
-      <button type="submit">Go</button>
+      <button type="submit" id="btn">Go</button>
     </div>
   </div>
+
+  <script src="main.js"></script>
 </body>
 </html>
