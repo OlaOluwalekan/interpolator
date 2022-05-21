@@ -14,9 +14,22 @@ header {
   padding: 5px 10px;
 }
 
-.save {
+.menu {
   font-size: 30px;
   color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+  /* background-color: green; */
+}
+
+.open {
+  margin-right: 10px;
+}
+
+.save {
+  margin-left: 10px;
 }
 
 /* End of header styles */

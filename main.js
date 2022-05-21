@@ -88,3 +88,20 @@ function ShowInfo(msg, posTop, posLeft) {
 function HideInfo() {
   infoMsg.style.display = 'none';
 }
+
+let saveBtn = document.getElementById('save');
+let openBtn = document.getElementById('open');
+
+let storedItem = localStorage.getItem("storedItem");
+
+saveBtn.onclick = () => {
+  let item1 = sFrom1.value;
+  localStorage.setItem("storedItem", item1);
+  // alert('saved');
+  console.log('item saved');
+}
+
+openBtn.onclick = () => {
+  localStorage.getItem("storedItem");
+  sFrom1.value = storedItem;
+}
