@@ -98,7 +98,7 @@ saveBtn.onclick = () => {
   let item1 = sFrom1.value;
   localStorage.setItem("storedItem", item1);
   // alert('saved');
-  console.log('item saved');
+  alert('item saved');
 }
 
 openBtn.onclick = () => {
